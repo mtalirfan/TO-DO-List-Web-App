@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO List</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/main.js" type="module"></script>
   </head>
   <body>
     <main>
       <section class="newItemEntry">
-        <form id="intemEntryForm">
+        <form id="itemEntryForm">
           <label for="newItem">Enter a new to-do item</label>
           <input
             id="newItem"
@@ -32,7 +33,7 @@
       </section>
       <section class="listContainer">
         <div class="listTitle">
-          <h1>TODO List</h1>
+          <h1 tabindex="0">TODO List</h1>
           <button
             id="clearItems"
             class="button"
@@ -45,7 +46,7 @@
         </div>
         <hr />
         <div id="listItems">
-          <div class="item">
+          <!-- <div class="item">
             <input type="checkbox" id="1" tabindex="0" /><label for="1">
               Eat</label
             >
@@ -53,8 +54,9 @@
           <div class="item">
             <input type="checkbox" id="2" tabindex="0" />
             <label for="2">Sleep</label>
-          </div>
+          </div> -->
         </div>
+        <p id="confirmation" class="confirmation" aria-live="assertive"></p>
       </section>
     </main>
   </body>

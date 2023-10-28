@@ -133,4 +133,8 @@ section {
 }
 .listContainer .item label {
   font-size: 1.5rem;
+}
+.listContainer .confirmation {
+  position: absolute;
+  left: -9999px;
 }/*# sourceMappingURL=styles.css.map */
